@@ -1,6 +1,24 @@
-#TitreAcceuil{
+.GrosTitre{
     color: blue;
 }
+
+#Themes{
+    list-style-type: none;
+    background: green;
+}
+
+#Themes li{
+    display:block;
+    float: left;
+    padding-left: 30px;
+    border-color:#DCDCDC #696969 #696969 #DCDCDC;
+}
+
+/*Au survol de la souris*/
+#Themes li:hover {
+    background-color:#D3D3D3;
+    border-color:#696969 #DCDCDC #DCDCDC #696969;
+ }
 
 
 h1{
