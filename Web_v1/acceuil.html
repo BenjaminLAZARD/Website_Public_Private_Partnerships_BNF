@@ -2,34 +2,58 @@
     <html lang="fr">
 
         <head title="Acceuil">
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="Page d'acceuil">
+            <meta name="author" content="Benjamin LAZARD">
+            <!-- Bootstrap core CSS -->
+            <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
             <link rel="stylesheet" href="CSS_Files/styles.css" title="Style_global" charset="utf-8">
-            <meta name="name" content="content" charset="utf-8">
-            <title>Acceuil PPP BNF </title>
+            <title>Acceuil PPP BNF</title>
 
         </head>
 
-        <nav>
-            <img src="BNF1.jpg" alt="image manquante de la BNF" height="200dp"/>
-            <h1 class="GrosTitre"> Présentation de la controverse</h1>
-            <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="partenariats.html">Frise et Partenariats</a></li>
-                <li><a href="debats.html">Arbre des débats</a></li>
-                <li><a href="acteurs.html">Graphe des acteurs</a></li>
-                <li><a href="conclusion.html">Conclusion</a></li>
-            </ul>
-        </nav>
-
 
         <body>
-            <p>
-                <strong>Paragraphe qui décrit brièvement ce qu'est la controverse</strong> <br><br>
-                Pour comprendre notre Controverse, il faut d’abord connaître la BNF. La Bibliothèque Nationale de France,
-                aussi appelée bibliothèque François Mitterand, au Sud-Est de Paris  a été crée en 1995 afin de rassembler
-                tous les documents de tous les types imprimés en France depuis bien avant le moyen-âge jusqu’à maintenant.
-                Tout depuis les revues scientifiques jusqu’aux revues pornographiques, en passant par les romans et textes
-                de loi, tout y est stocké.
-            </p>
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                  <span class="sr-only">Toggle navigation</span>
+                                </button>
+                                <a class="navbar-brand" href="mailto:benjamin.lazard@telecom-paristech.fr?subject= Site Web BNF&body=C'est vraiment chouette ! Bravo !">Contact the webmaster</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <img src="BNF1.jpg" alt="image manquante de la BNF" height="50%" width="100%">
+                                <h1 class="GrosTitre"> Présentation de la controverse</h1>
+                                <ul class="nav navbar-nav">
+                                    <li><a href="acceuil.html">Accueil</a></li>
+                                    <li><a href="partenariats.html">Frise et Partenariats</a></li>
+                                    <li><a href="debats.html">Arbre des débats</a></li>
+                                    <li><a href="acteurs.html">Graphe des acteurs</a></li>
+                                    <li><a href="conclusion.html">Conclusion</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container Paragraphe">
+                    <p>
+                        <strong>Paragraphe qui décrit brièvement ce qu'est la controverse</strong> <br><br>
+                        Pour comprendre notre Controverse, il faut d’abord connaître la BNF. La Bibliothèque Nationale de France,
+                        aussi appelée bibliothèque François Mitterand, au Sud-Est de Paris  a été crée en 1995 afin de rassembler
+                        tous les documents de tous les types imprimés en France depuis bien avant le moyen-âge jusqu’à maintenant.
+                        Tout depuis les revues scientifiques jusqu’aux revues pornographiques, en passant par les romans et textes
+                        de loi, tout y est stocké.
+                    </p>
+            </div>
+
         </body>
 
     </html>

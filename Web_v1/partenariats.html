@@ -2,26 +2,91 @@
     <html lang="fr">
 
         <head title="Partenariats">
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="Page Partenariats et Frise Chronologique">
+            <meta name="author" content="Benjamin LAZARD">
+            <!-- Bootstrap core CSS -->
+            <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Bootstrap cool fonts CSS (juste un essai) -->
+            <link rel="stylesheet" type="text/css" href="CSS_Files/font-awesome.css">
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
             <link rel="stylesheet" href="CSS_Files/styles.css" title="Style_global" charset="utf-8">
-            <meta name="name" content="content" charset="utf-8">
+
+            <!-- Slider
+            ================================================== -->
+            <link href="CSS_Files/owl.carousel.css" rel="stylesheet" media="screen">
+            <link href="CSS_Files/owl.theme.css" rel="stylesheet" media="screen">
+
+            <!-- Stylesheet
+            ================================================== -->
+            <link rel="stylesheet" type="text/css"  href="CSS_Files/style2.css">
+            <link rel="stylesheet" type="text/css" href="CSS_Files/responsive.css">
+
+            <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+
+            <script type="text/javascript" src="js/modernizr.custom.js"></script>
             <title>Partenariats PPP BNF </title>
 
         </head>
 
-        <nav>
-            <img src="scanner.jpg" alt="image manquante de scanner.jpg" height="200dp"/>
-            <h1 class="GrosTitre" >Frise chronologique</h1>
-            <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="partenariats.html">Frise et Partenariats</a></li>
-                <li><a href="debats.html">Arbre des débats</a></li>
-                <li><a href="acteurs.html">Graphe des acteurs</a></li>
-                <li><a href="conclusion.html">Conclusion</a></li>
-            </ul>
-        </nav>
-
 
         <body>
+
+            <!-- Navigation Menu plus classe
+            ==========================================-->
+            <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="mailto:benjamin.lazard@telecom-paristech.fr?subject= Site Web BNF&body=C'est vraiment chouette ! Bravo !">
+                      Contact the Webmaster
+                  </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#tf-home" class="page-scroll">Accueil</a></li>
+                    <li><a href="#tf-about" class="page-scroll">Frise et Partenariats</a></li>
+                    <li><a href="#tf-team" class="page-scroll">Graphe des acteurs</a></li>
+                    <li><a href="#tf-services" class="page-scroll">Conclusion</a></li>
+                    <li><a href="#tf-contact" class="page-scroll">Créateurs du site</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+            <!-- Home Page
+            ==========================================-->
+            <div id="tf-home" class="text-center">
+                <div class="overlay">
+                    <div class="content">
+                        <h1>Voici notre <strong><span class="color">Frise Chronologique</span></strong></h1>
+                        <p class="lead">Où en est la BNF au niveau de la <strong>numérisation</strong> aujourd'hui ?</p>
+                        <a href="#tf-about" class="fa fa-angle-down page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="acceuil.html">Accueil</a></li>
+                    <li><a href="partenariats.html">Frise et Partenariats</a></li>
+                    <li><a href="debats.html">Frise et Partenariats</a></li>
+                    <li><a href="acteurs.html">Graphe des acteurs</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+            <!--
             <p>
                 <strong>Frise</strong> <br><br>
                 Blabla
@@ -31,6 +96,153 @@
                     <li><img src="BNF1.jpg" alt="fuck" height="100dp"/></li>
                 </ul>
             </p>
+            -->
+            <div id="tf-about">
+                <div class="container">
+                <div class="page-header">
+                    <h1 id="timeline"><strong><span class="color">Frise Chronologique</span></strong></h1>
+                </div>
+                <ul class="timeline">
+                    <li>
+                      <div class="timeline-badge info"><p>2015</p></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Accord avec Apple</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Décembre 2015</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>BNF-Partenariats fait appel à <strong>Apple</strong> pour numériser une collection de romans célèbres comme oubliés
+                          datant du XIXème siècle</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge warning"><p>2012</p></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Accord Avec Believe Digital</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Novembre 2012</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>BNF-Partenariats s'associe avec <strong>Believe Digital</strong> sur une durée d'un an pour numériser la majeure partie de son fonds sonore patrimonial pour une sauvegarde
+                             plus sûre et un partage public plus aisé sur Gallica. Le travail attendu est la numérisation de plus de 180 000 disques édités entre
+                             1900 et 1962 pour des raisons juridiques. Cela corresponds à peu prés à 700 000 titre et ce en une durée de seulement 7 ans et demi
+                             ce qui est estimé le plus grand effort de numérisation entrepris sur une collection unique dans le monde.</p>
+                        </div>
+                        <div class="timeline-heading">
+                            <br>
+                          <h4 class="timeline-title">Accord Avec Proquest</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Novembre 2012</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>BNF-Partenariats s'associe avec <strong>Proquest</strong> pour numériser le Livre Ancien de 1470 à 1701 soit environ 70 000
+                             ouvrages ou 10 000 000 pages.</p>
+                        </div>
+                        <div class="timeline-heading">
+                            <br>
+                          <h4 class="timeline-title">Ouverture de la filiale BNF Partenariats</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Novembre 2012</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>La BNF crée la filiale <strong>BNF-Partenariats</strong> pour gérer les offres reçues après 2011</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge danger"><p>2011</p></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Appel d'offres</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Juin 2011</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>La BNF décide d'accélérer le financement de la numérisation de ses
+                          oeuvres du domaine public. Le but est d'aller plus loin que la librarie en ligne <strong>Gallica</strong> qui proposait
+                          déjà des oeuvres numérisées à un format proche de l'image, en proposant du <kbd>texte plein</kbd>, pour faire
+                          des recherches profondes, et pouvoir plus facilement copier du contenu. Le format de numérisation choisi est
+                          <kbd>e-Pub</kbd>. La numérisation étant onéreuse, la BNF recherche des partenaires privés</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge default"><p>2010</p></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Investissments d'avenir</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> ??</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>La BNF s'inscrit au programme des investissments d'avenir pour bénéficier de fonds de l'état
+                          pour pouvoir numériser ses oeuvres dans le cadre de son programme <strong>Gallica</strong>. </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge info"><p>2006</p></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Mise en place de Gallica</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>La BNF se dote de son programme de numérisation au format image des oeuvres publiques : <strong>Gallica</strong>.
+                             Le but est de rendre l'accès à la culture plus facile, de limiter les files d'attente, de permettre à plusieurs utilisateurs
+                             de consulter un même document en même temps, de ne plus abîmer les livres par une consultation physique répétée, etc...</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge default"><p>1990</p></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Début des projets de numérisation</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> ??</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>La BNF imagine pour la 1ère fois un programme de numérisation de ses oeuvres</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge default">
+                          <span class="glyphicon glyphicon2 glyphicon-home" style="center" ></span>
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Left Event</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Add more progress events and milestones to the left or right side of the timeline. Each event can be tagged with a date and given a beautiful icon to symbolize it's spectacular meaning.</p>
+
+                          <hr>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                              <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge success"><i class="glyphicon glyphicon2 glyphicon-thumbs-up"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Oldest event</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Add more progress events and milestones to the left or right side of the timeline. Each event can be tagged with a date and given a beautiful icon to symbolize it's spectacular meaning.</p>
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </body>
 
     </html>
