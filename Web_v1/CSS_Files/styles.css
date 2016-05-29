@@ -5,12 +5,6 @@
     font-size: 40;
 }
 
-.Paragraphe{
-    float: none;
-    clear: left;
-    margin-top: 600px;
-}
-
 #Themes{
     list-style-type: none;
     background: green;
