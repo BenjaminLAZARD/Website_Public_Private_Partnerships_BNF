@@ -128,6 +128,15 @@ font-weight: 900;
 	background-repeat: no-repeat;
 	color: #cfcfcf;
 }
+#tf-home.partenariats{
+	background: url(../debate.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+}
+
 #tf-acceuil{
 	background: url(../img/BNF1.jpg);
 	background-size: cover;
