@@ -3,7 +3,7 @@
 
     <head title="Débats">
         <meta charset="utf-8">
-        <title>Arbre des débats PPP BNF </title>
+        <title>Debats PPP BNF </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Arbre des débats">
@@ -78,69 +78,48 @@
                 </div>
             </div>
 
-            <div id="tf-about" class="container carte">
-                <div class="row">
-                    <div class="col-md-8 col-lg-8 col-sm-8">
+            <!--<div id="arbre_test" class="text-center"></div>-->
 
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-4 mycontainer">
-                        <div class="container nicomede1" id="imgcontainer">
-                            <img src="BNF1.jpg" id="debateimg" alt="" />
-                            <div class="about-text">
-                                <div class="section-title debate">
-                                    <h4>Portnawak exemple gregergergsrgsr</h4>
-                                    <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
-                                    <hr>
-                                    <div class="clearfix"></div>
-                                    <p class="intro">
-                                        Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                    </p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="container nicomede2" id="imgcontainer">
-                        <img src="BNF1.jpg" id="debateimg" alt="" />
-                        <div class="about-text">
-                            <div class="section-title debate">
-                                <h4>C'est bien mieux !</h4>
-                                <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
-                                <hr>
-                                <div class="clearfix"></div>
-                                <p class="intro">
-                                    Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                </p>
-                            </div>
-                    </div>
+            <div id="tf-about" class="container carte">
+                <!--<img id= "arbre_test" src="img/transparent.png" alt="salut" />-->
+                <div class="pres_arbre">
+                    <p>
+                        Afin de découvrir les <span class="color"><strong>controverses</strong></span> qui lient les différents éléments de
+                        l'<span class="color"><strong>arbre des débats</strong></span>, <br>
+                        <span class="donotmiss">passez la souris</span> sur les liens qui les unissent.
+                    </p>
                 </div>
-                <div class="container nicomede3" id="imgcontainer">
-                    <img src="BNF1.jpg" id="debateimg" alt="" />
-                    <div class="about-text">
-                        <div class="section-title debate">
-                            <h4>C'est bien mieux !</h4>
-                            <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
-                            <hr>
-                            <div class="clearfix"></div>
-                            <p class="intro">
-                                Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
-                                Salut, comment ça va ?
-                                Salut, comment ça va ?
-                                Salut, comment ça va ?
-                                Salut, comment ça va ?
-                            </p>
-                        </div>
-                </div>
+                <img id="arbre_total" src="img/transparent.png" border="0" width="800" height="450" orgWidth="800" orgHeight="450" usemap="arbre_des_debats" alt="" />
+                <map name="arbre_des_debats" id="arbre_des_debats">
+                    <area id="M" alt="" title="" href="#" shape="rect" coords="377,94,427,358" style="outline:none;" target="_self"/>
+                    <area id="LH" alt="" title="" href="#" shape="poly" coords="334,80,313,75,260,90,239,148,232,191,253,196" style="outline:none;" target="_self" />
+                    <area id="RH" alt="" title="" href="#" shape="poly" coords="490,71,480,91,495,111,522,130,540,160,548,184,569,189,570,163,528,103" style="outline:none;" target="_self"     />
+                    <area id="RB" alt="" title="" href="#" shape="poly" coords="577,269,548,268,536,289,521,320,494,347,463,360,462,393,516,369,561,319" style="outline:none;" target="_self"     />
+                    <area id="LB" alt="" title="" href="#" shape="poly" coords="334,358,329,380,301,371,264,348,242,323,228,274,228,264,246,260,289,314" style="outline:none;" target="_self"     />
+                </map>
             </div>
-                </div>
-            </div>
-        </div>
+
+            <script>
+                document.getElementById("LH").onmouseover = function() {mouseOver(1)};
+                document.getElementById("LH").onmouseout = function() {mouseOut()};
+                document.getElementById("M").onmouseover = function() {mouseOver(2)};
+                document.getElementById("M").onmouseout = function() {mouseOut()};
+                document.getElementById("RH").onmouseover = function() {mouseOver(3)};
+                document.getElementById("RH").onmouseout = function() {mouseOut()};
+                document.getElementById("RB").onmouseover = function() {mouseOver(4)};
+                document.getElementById("RB").onmouseout = function() {mouseOut()};
+                document.getElementById("LB").onmouseover = function() {mouseOver(5)};
+                document.getElementById("LB").onmouseout = function() {mouseOut()};
+
+                function mouseOver(x) {
+                    var y = x*(-450);
+                    document.getElementById("arbre_total").style.backgroundPosition = "0 "+ y+"px";
+                }
+
+                function mouseOut() {
+                    document.getElementById("arbre_total").style.backgroundPosition = "0 0px";
+                }
+            </script>
 
             <div class="container text-center">
                 <div class="section-title center">

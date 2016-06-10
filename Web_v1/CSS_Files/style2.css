@@ -149,6 +149,15 @@ font-weight: 900;
 	color: #cfcfcf;
 }
 
+#tf-home.acteurs{
+	background: url(../livres.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+}
+
 #tf-acceuil{
 	background: url(../img/BNF1.jpg);
 	background-size: cover;
@@ -755,6 +764,11 @@ button.btn.tf-btn.btn-default {
 	outline: none;
 	outline-offset: none;
 }
+
+#tf-frise{
+	margin-top: 5%;
+	margin-bottom: 0;
+}
 #debateimg{
 	border-radius:30%;
 	padding: 10px;
@@ -769,6 +783,94 @@ button.btn.tf-btn.btn-default {
 	border-color:#222222;
 	border-style: solid;
 }
+#arbre_total{
+	background: url(../img/arbre.png);
+	margin-left: 15%;
+	width:800px;
+	height:450px;
+	background-position: center;
+	background-attachment: inherit;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+#arbre_test{
+	background: url(../img/arbre.png);
+	width: 800px;
+	height: 450px;
+	background-position: center;
+	background-attachment: inherit;
+	background-repeat: no-repeat;
+	background-position: 0px -450px;
+	margin-left: 15%;
+}
+
+.pres_arbre{
+	text-align: center;
+	font-size: 20;
+	font-weight: 400;
+	border-radius:5%;
+	padding: 3%;
+	max-width: 100%;
+	border-width: 50%;
+	border-color:#fcac45;
+	color: #ffffff;
+	border-style: solid;
+	margin-bottom: 1%;
+	background-color: #222222;
+}
+
+.donotmiss{
+	font-size: 30;
+	font-weight: 900;
+}
+
+#image_acteurs{
+	margin-right: 5%;
+	border-radius: 50px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #222222;
+	display: block;
+}
+#comission_eur:hover ~ .nicomede2{
+	display: none;
+}
+#ministere:hover ~ #image_acteurs{
+	display: none;
+}
+#savoircom1:hover ~ #image_acteurs{
+	display: none;
+}
+#interassociation:hover ~ #image_acteurs{
+	display: none;
+}
+#bnf_acteur:hover ~ #image_acteurs{
+	display: none;
+}
+#bnfpartenariat_acteur:hover ~ #image_acteurs{
+	display: none;
+}
+#proquest_acteur:hover ~ #image_acteurs{
+	display: none;
+}
+#apple_acteur:hover ~ #image_acteurs{
+	display: none;
+}
+#believe_acteur:hover ~ #image_acteurs{
+	display: none;
+}
+#comission_educ:hover ~ #image_acteurs{
+	display: none;
+}
+#cada:hover ~ #image_acteurs{
+	display: none;
+}
+#consnatnum:hover ~ #image_acteurs{
+	display: none;
+}
+
+
 /* Footer */
 nav#footer{
 	background: #222222;

@@ -2,30 +2,204 @@
     <html lang="fr">
 
         <head title="Debats">
-            <link rel="stylesheet" href="CSS_Files/styles.css" title="Style_global" charset="utf-8">
-            <meta name="name" content="content" charset="utf-8">
-            <title>Débats PPP BNF </title>
+            <meta charset="utf-8">
+            <title>Acteurs PPP BNF </title>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="Arbre des débats">
+            <meta name="author" content="Benjamin LAZARD">
+
+            <!-- Bootstrap core CSS -->
+            <link href="bootstrap-3.3.6/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+            <!-- Slider
+            ================================================== -->
+            <link href="CSS_Files/owl.carousel.css" rel="stylesheet" media="screen">
+            <link href="CSS_Files/owl.theme.css" rel="stylesheet" media="screen">
+
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <link href="../../assets/css/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet">
+
+            <!-- Stylesheet
+            ================================================== -->
+            <link rel="stylesheet" type="text/css" href="CSS_Files/styles.css" title="Style_global" charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="CSS_Files/style2.css">
+            <link rel="stylesheet" type="text/css" href="CSS_Files/responsive.css">
+
+            <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+            <link rel="icon" href="favicon4.ico" type="image/x-icon">
+            <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
         </head>
 
-        <nav>
-            <img src="livres.jpg" alt="livres.jpg n'a pas pu être chargé" height="200dp"/>
-            <h1 class="GrosTitre">Présentation des différents acteurs</h1>
-            <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="partenariats.html">Frise et Partenariats</a></li>
-                <li><a href="debats.html">Arbre des débats</a></li>
-                <li><a href="acteurs.html">Graphe des acteurs</a></li>
-                <li><a href="conclusion.html">Conclusion</a></li>
-            </ul>
-        </nav>
-
-
         <body>
+            <!-- Navigation Menu
+            ==========================================-->
+            <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="mailto:benjamin.lazard@telecom-paristech.fr?subject= Site Web BNF&body=C'est vraiment chouette ! Bravo !">
+                      Contact the Webmaster
+                  </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="acceuil.html">Accueil</a></li>
+                      <li><a href="partenariats.html">Frise et Partenariats</a></li>
+                      <li><a href="debats.html" class="page-scroll">Arbre des débats</a></li>
+                      <li><a href="#tf-home">Graphe des acteurs</a></li>
+                      <li><a href="conclusion.html">Conclusion</a></li>
+                      <li><a href="glossaire.html">Glossaire</a></li>
+                      <li><a href="sources.html">Sources</a></li>
+                      <li><a href="createurs.html">Créateurs du site</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+            <!-- Home Page
+            ==========================================-->
+            <div id="tf-home" class="text-center acteurs">
+                <div class="overlay">
+                    <div class="content">
+                        <h1>Voici notre <strong><span class="color"> Carte des Acteurs</span></strong></h1>
+                        <p class="lead">Recensons l'ensemble des <strong>acteurs</strong> impliqués dans la controverse</p>
+                        <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="tf-about" class="container carte">
+                <div class="row">
+                    <div class="col-md-8 col-lg-8 col-sm-8">
+                        <img src="img/acteurs.png" usemap="#image-map" width="800" id="image_acteurs">
+                        <map name="image-map">
+                            <area target="" alt="comission_eur" id="comission_eur" href="" coords="132,140,11,81" shape="rect">
+                            <area target="" alt="ministere" id="ministere" href="" coords="273,157,203,105" shape="rect">
+                            <area target="" alt="savoircom1" id="savoircom1" href="" coords="260,249,190,209" shape="rect">
+                            <area target="" alt="interassociation" id="interassociation" href="" coords="189,264,259,309" shape="rect">
+                            <area target="" alt="bnf_acteur" id="bnf_acteur" href="" coords="338,157,426,227" shape="rect">
+                            <area target="" alt="bnfpartenariat_acteur" id="bnfpartenariat_acteur" href="" coords="381,347,63" shape="circle">
+                            <area target="" alt="proquest_acteur" id="proquest_acteur" href="" coords="38,453,172,542" shape="rect">
+                            <area target="" alt="apple_acteur" id="apple_acteur" href="" coords="348,474,481,563" shape="rect">
+                            <area target="" alt="believe_acteur" id="believe_acteur" href="" coords="603,438,737,529" shape="rect">
+                            <area target="" alt="comission_educ" id="comission_educ" href="" coords="496,135,592,194" shape="rect">
+                            <area target="" alt="cada" id="cada" href="" coords="498,245,589,301" shape="rect">
+                            <area target="" alt="consnatnum" id="consnatnum" href="" coords="497,202,591,240" shape="rect">
+                        </map>
+
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 mycontainer">
+                        <div class="container nicomede1" id="imgcontainer">
+                            <img src="BNF1.jpg" id="debateimg" alt="" />
+                            <div class="about-text">
+                                <div class="section-title debate">
+                                    <h4>Portnawak exemple gregergergsrgsr</h4>
+                                    <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
+                                    <hr>
+                                    <div class="clearfix"></div>
+                                    <p class="intro">
+                                        Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
+                                        Salut, comment ça va ?
+                                        Salut, comment ça va ?
+                                        Salut, comment ça va ?
+                                        Salut, comment ça va ?
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="container nicomede2" id="imgcontainer">
+                        <img src="BNF1.jpg" id="debateimg" alt="" />
+                        <div class="about-text">
+                            <div class="section-title debate">
+                                <h4>C'est bien mieux !</h4>
+                                <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                                <p class="intro">
+                                    Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
+                                    Salut, comment ça va ?
+                                    Salut, comment ça va ?
+                                    Salut, comment ça va ?
+                                    Salut, comment ça va ?
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="container nicomede3" id="imgcontainer">
+                    <img src="BNF1.jpg" id="debateimg" alt="" />
+                    <div class="about-text">
+                        <div class="section-title debate">
+                            <h4>C'est bien mieux !</h4>
+                            <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                            <p class="intro">
+                                Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
+                                Salut, comment ça va ?
+                                Salut, comment ça va ?
+                                Salut, comment ça va ?
+                                Salut, comment ça va ?
+                            </p>
+                        </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
             <p>
                 <strong>Graphe de présentation des différents acteurs</strong> <br><br>
                 (Très) Grosse image
+                Ne aps oublier la légende
             </p>
+            <div class="container text-center">
+                <div class="section-title center">
+                    <h2><strong>Suite</strong> de la présentation de la controverse</h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <a href="conclusion.html" class="fa fa-arrow-circle-right"></a>
+            </div>
+
+            <nav id="footer">
+                <div class="container">
+                    <div class="pull-left fnav">
+                        <p>Controverse BNF-PArtenariats : la privatisation du domaine public ?
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Réalisé par <a href="createurs.html">le groupe ETIC partenariats publics/privés</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; juin 2016</p>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script type="text/javascript" src="js/bootstrap.js"></script>
+            <script type="text/javascript" src="js/SmoothScroll.js"></script>
+            <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+            <script src="js/owl.carousel.js"></script>
+
+            <!-- Javascripts
+            ================================================== -->
+            <script type="text/javascript" src="js/main.js"></script>
         </body>
 
     </html>
