@@ -55,10 +55,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                      <li><a href="acceuil.html">Accueil</a></li>
-                      <li><a href="partenariats.html">Frise et Partenariats</a></li>
-                      <li><a href="debats.html" class="page-scroll">Arbre des débats</a></li>
-                      <li><a href="#tf-home">Graphe des acteurs</a></li>
+                      <li><a href="index.html">Accueil</a></li>
+                      <li><a href="partenariats.html">Chronologie</a></li>
+                      <li><a href="debats.html" class="page-scroll">Débats</a></li>
+                      <li><a href="#tf-home">Acteurs</a></li>
                       <li><a href="conclusion.html">Conclusion</a></li>
                       <li><a href="glossaire.html">Glossaire</a></li>
                       <li><a href="sources.html">Sources</a></li>
@@ -80,92 +80,277 @@
                 </div>
             </div>
 
-
+            <script type="text/javascript">
+            function change(x) {
+                var ids= ["comission_eur","ministere","savoircom1","interassociation","bnf_acteur","bnfpartenariat_acteur",
+                          "proquest_acteur","apple_acteur","believe_acteur","comission_educ","cada","consnatnum"];
+                var bonne_area = document.getElementById(x);
+                for (var i = 0; i < ids.length; i++) {
+                    if (ids[i]!=x) {
+                        document.getElementById("nicomede"+i).style.display= "none";
+                        //document.getElementById("nicomede"+i).style.backgroundColor= "#f4c422";
+                        //document.getElementById("nicomede"+i).innerHTML= y;
+                    }
+                    else {
+                        var bon_nicomede = document.getElementById("nicomede"+i);
+                        bon_nicomede.style.display= "block";
+                        //bonne_area.classList.add(overlay_acteurs);
+                        //bonne_area.style.display ="block";
+                        //bonne_area.style.backgroundColor ="#555555";
+                        //document.getElementById("nicomede"+i).style.backgroundColor= "transparent";
+                    }
+                }
+            }
+            </script>
 
 
             <div id="tf-about" class="container carte">
+                <div class="pres_arbre">
+                    <p>
+                        <span class="donotmiss">Cliquez</span> sur les différents éléments de la <span class="color"><strong>carte des acteurs</strong></span>.
+                        <br>
+                        Le texte de couleur <span class="color">orange</span> correspond à des liens hypertextes.
+                    </p>
+                </div>
                 <div class="row">
                     <div class="col-md-8 col-lg-8 col-sm-8">
                         <img src="img/acteurs.png" usemap="#image-map" width="800" id="image_acteurs">
                         <map name="image-map">
-                            <area target="" alt="comission_eur" id="comission_eur" href="" coords="132,140,11,81" shape="rect">
-                            <area target="" alt="ministere" id="ministere" href="" coords="273,157,203,105" shape="rect">
-                            <area target="" alt="savoircom1" id="savoircom1" href="" coords="260,249,190,209" shape="rect">
-                            <area target="" alt="interassociation" id="interassociation" href="" coords="189,264,259,309" shape="rect">
-                            <area target="" alt="bnf_acteur" id="bnf_acteur" href="" coords="338,157,426,227" shape="rect">
-                            <area target="" alt="bnfpartenariat_acteur" id="bnfpartenariat_acteur" href="" coords="381,347,63" shape="circle">
-                            <area target="" alt="proquest_acteur" id="proquest_acteur" href="" coords="38,453,172,542" shape="rect">
-                            <area target="" alt="apple_acteur" id="apple_acteur" href="" coords="348,474,481,563" shape="rect">
-                            <area target="" alt="believe_acteur" id="believe_acteur" href="" coords="603,438,737,529" shape="rect">
-                            <area target="" alt="comission_educ" id="comission_educ" href="" coords="496,135,592,194" shape="rect">
-                            <area target="" alt="cada" id="cada" href="" coords="498,245,589,301" shape="rect">
-                            <area target="" alt="consnatnum" id="consnatnum" href="" coords="497,202,591,240" shape="rect">
+                            <area class="" alt="comission_eur" id="comission_eur" coords="132,140,11,81" shape="rect" onclick="change('comission_eur')">
+                            <area class="" target="" alt="ministere" id="ministere" coords="273,157,203,105" shape="rect" onclick="change('ministere')">
+                            <area class="" target="" alt="savoircom1" id="savoircom1" coords="260,249,190,209" shape="rect" onclick="change('savoircom1')">
+                            <area class="" target="" alt="interassociation" id="interassociation" coords="189,264,259,309" shape="rect" onclick="change('interassociation')">
+                            <area class="" target="" alt="bnf_acteur" id="bnf_acteur" coords="338,157,426,227" shape="rect" onclick="change('bnf_acteur')">
+                            <area class="" target="" alt="bnfpartenariat_acteur" id="bnfpartenariat_acteur" coords="381,347,63" shape="circle" onclick="change('bnfpartenariat_acteur')">
+                            <area class="" target="" alt="proquest_acteur" id="proquest_acteur"   coords="38,453,172,542" shape="rect" onclick="change('proquest_acteur')">
+                            <area class="" target="" alt="apple_acteur" id="apple_acteur"   coords="348,474,481,563" shape="rect" onclick="change('apple_acteur')">
+                            <area class="" target="" alt="believe_acteur" id="believe_acteur"   coords="603,438,737,529" shape="rect" onclick="change('believe_acteur')">
+                            <area class="" target="" alt="comission_educ" id="comission_educ"   coords="496,135,592,194" shape="rect" onclick="change('comission_educ')">
+                            <area class="" target="" alt="cada" id="cada"   coords="498,245,589,301" shape="rect" onclick="change('cada')">
+                            <area class="" target="" alt="consnatnum" id="consnatnum"   coords="497,202,591,240" shape="rect" onclick="change('consnatnum')">
                         </map>
 
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 mycontainer">
-                        <div class="container nicomede1" id="imgcontainer">
-                            <img src="BNF1.jpg" id="debateimg" alt="" />
+                        <div class="container imgcontainer nicomede" id="nicomede0">
+                            <img src="img/comeur.jpg" id="debateimg" alt="" />
                             <div class="about-text">
                                 <div class="section-title debate">
-                                    <h4>Portnawak exemple gregergergsrgsr</h4>
-                                    <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
+                                    <h4 class ="debateh4">Comission Européenne</h4>
                                     <hr>
-                                    <div class="clearfix"></div>
-                                    <p class="intro">
-                                        Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                        Salut, comment ça va ?
-                                        Salut, comment ça va ?
+                                    <br>
+                                    <p class="intro" id="intro0">
+                                        <br>
+                                        Soutien le <a href="http://bbf.enssib.fr/consulter/bbf-2011-02-0056-011"  target="_blank" style="color=blue">projet de numérisation</a> au niveau Européeen.
                                     </p>
                                 </div>
                         </div>
                     </div>
-                    <div class="container nicomede2" id="imgcontainer">
-                        <img src="BNF1.jpg" id="debateimg" alt="" />
+                        <div class="container imgcontainer nicomede" id="nicomede1">
+                            <img src="img/minisculeduc.jpg" id="debateimg" alt="" />
+                            <div class="about-text">
+                                <div class="section-title debate">
+                                    <h4>Ministère de la culture et de l'éducation</h4>
+                                    <hr>
+                                    <div class="clearfix"></div>
+                                    <p class="intro">
+                                        Il a apporté son soutien aux <a href="http://actions-recherche.bnf.fr/BnF/anirw3.nsf/IX02/P2014000098_programmes-finances-par-le-ministere-de-la-culture"  target="_blank" style="color=blue">programmes de numérisation </a> de la BnF.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="container imgcontainer nicomede" id="nicomede2">
+                        <img src="img/savoircom1.png" id="debateimg" alt="" />
                         <div class="about-text">
                             <div class="section-title debate">
-                                <h4>C'est bien mieux !</h4>
-                                <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
+                                <h4>Collectif Savoircom1</h4>
                                 <hr>
                                 <div class="clearfix"></div>
                                 <p class="intro">
-                                    Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                    Salut, comment ça va ?
-                                    Salut, comment ça va ?
+                                    Collectif prônant la diffusion des connaissances à l’ère du numérique. Ses deux cofondateurs
+                                    MM. Lionel Maurin et Silvère Mercier (deux bibliothécaires) ont été entendus dans le cadre des
+                                    auditions sur les accords de partenariats conclu par la BnF devant la commission des affaires
+                                    culturelles et de l’éducation. <a href="http://www.savoirscom1.info/2013/01/non-a-la-privatisation-du-domaine-public-par-la-bibliotheque-nationale-de-france/"  target="_blank" style="color=blue">Le collectif s'oppose à ces accords</a>.
                                 </p>
                             </div>
                     </div>
                 </div>
-                <div class="container nicomede3" id="imgcontainer">
-                    <img src="BNF1.jpg" id="debateimg" alt="" />
+                <div class="container imgcontainer nicomede" id="nicomede3">
+                    <img src="img/IABD.jpg" id="debateimg" alt="" />
                     <div class="about-text">
                         <div class="section-title debate">
-                            <h4>C'est bien mieux !</h4>
-                            <h2>Some words <strong>about us</strong> dvsssssssssssssssssss sssssssssssssssssssssssssssssss</h2>
+                            <h4>IABD</h4>
+                            <h2>Intérassociation Archives Bibliothèques Documentation</h2>
                             <hr>
                             <div class="clearfix"></div>
                             <p class="intro">
-                                Salut, comment ça va ? Salut, comment ça va ? Salut, comment ça va ?
-                                Salut, comment ça va ?
-                                Salut, comment ça va ?
-                                Salut, comment ça va ?
-                                Salut, comment ça va ?
+                                Fédération d’associations réunissant 17 associations professionnelles de métiers relatifs à la préservation
+                                et diffusion des connaissances. Elle s’est prononcée contre les accords de partenariats de la BnF en dénonçant
+                                notamment un manque de transparence des marchés conclus, et une <a href="http://iabd.fr/2013/01/22/domaine-public-le-grand-emprunt-jusqua-labsurde/"  target="_blank" style="color=blue">incompréhension face au remboursement du grand emprunt</a>
+                                 par l’achat de licences de la part des bibliothèques régionales.
                             </p>
+                            <!--<p class="intro">
+                                <br>
+                                Au sein de cette fédération, quatre autres associations ont dénoncé de nouveau séparément leur opposition
+                                aux accords. Il s’agit de  :
+                            </p>
+                            <ul class= "intro">
+                                <li>ABF : Association des Bibliothécaires de France</li>
+                                <li>ADBU : Association des Directeurs et personnels de direction des bibliothèques Universitaires et de la Documentation</li>
+                                <li>ACIM : Association pour la Coopération des professionnels de l’Information Musicale</li>
+                                <li>ABDS : Association des professionnels de l’information et de la documentation</li>
+                            </ul>-->
                         </div>
                 </div>
             </div>
+            <div class="container imgcontainer nicomede" id="nicomede4">
+                <img src="BNF1.jpg" id="debateimg" alt="" />
+                <div class="about-text">
+                    <div class="section-title debate">
+                        <h4>BNF</h4>
+                        <h2>Bibliothèque Nationale de France</h2>
+                        <hr>
+                        <div class="clearfix"></div>
+                        <p class="intro">
+                            Etablissement public à caractère administratif et organisme dépositaire du dépôt légal.
+                            C'est elle qui a créé BNF-Partenariats pour mettre à bien la
+                            <a href="http://www.bnf.fr/fr/professionnels/innov_num_numerisation.html"  target="_blank" style="color=blue">numérisation</a>.
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <div class="container imgcontainer nicomede" id="nicomede5">
+            <img src="img/BNF-P.png" id="debateimg" alt="" />
+            <div class="about-text">
+                <div class="section-title debate">
+                    <h4>BNF-Partenariats</h4>
+                    <hr>
+                    <div class="clearfix"></div>
+                    <p class="intro">
+                        <a href="http://www.bnf.fr/fr/acces_dedies/bnf_partenariats/s.bnf_partenariats_qui.html?first_Art=non"  target="_blank" style="color=blue">Filiale</a>
+                        , détenue et gérée à 100% par la BNF, chargée de réaliser des marchés de partenariats
+                        avec des entreprises privées ou publiques pour mettre en œuvre le programme de numérisation.
+                    </p>
+                </div>
+        </div>
+    </div>
+    <div class="container imgcontainer nicomede" id="nicomede6">
+        <img src="img/proquest.png" id="debateimg" alt="" />
+        <div class="about-text">
+            <div class="section-title debate">
+                <h4>Proquest</h4>
+                <hr>
+                <div class="clearfix"></div>
+                <p class="intro" style="text-indent: 50px">
+                    <a href="http://www.proquest.com/EMEA-FR/"  target="_blank" style="color=blue">Editeur anglo-saxon</a>
+                    , spécialisé dans la numérisation de ressources culturelles auprès d’un public savant.
+                    Il a conclu avec BnF-partenariats un marché de
+                    <a href="https://drive.google.com/file/d/0B4-sjPft_IJGTnI5Zy1jcFJTdDRHdzcxNWRfcWxzQ3RvSTV3/view?usp=sharing"  target="_blank" style="color=blue">partenariat</a>
+                    le 25 octobre 2012 portant sur la numérisation de 70 000
+                    œuvres imprimées en France entre 1470 et 1700.
+                </p>
+                <p class="intro" style="text-indent: 50px">
+                    Ces œuvres ont vocation à venir enrichir sa base de données « Early European books », alimentée par des fonds venant
+                    d’autres bibliothèques européennes avec qui ProQuest a conclu des accords comme la Bibliothèque Nationale Centrale
+                    de Florence, la Bibliothèque Nationale des Pays-Bas, la Wellcome Library à Londres et la Bibliothèque Royale du Danemark.
+                </p>
+            </div>
+    </div>
+</div>
+<div class="container imgcontainer nicomede" id="nicomede7">
+    <img src="img/apple.png" id="debateimg" alt="" />
+    <div class="about-text">
+        <div class="section-title debate">
+            <h4>Apple</h4>
+            <hr>
+            <div class="clearfix"></div>
+            <p class="intro">
+                La multinationale américaine a conclu un
+                <a href="http://www.savoirscom1.info/2015/12/partenariat-bnfapple-des-questions-en-suspens-mais-pas-denclosure/"  target="_blank" style="color=blue">accord</a>
+                avec BnF-partenariats en décembre 2015 portant sur
+                la numérisation de 10 000 livres du XIXe siècle. Au contraire des autres partenaires, Apple
+                s’engage à rendre immédiatement disponibles sur Gallica les ressources numériques en format
+                image et que seuls les formats e-pub seront rendus payants.
+            </p>
+        </div>
+</div>
+</div>
+<div class="container imgcontainer nicomede" id="nicomede8">
+    <img src="img/believe-digital.png" id="debateimg" alt="" />
+    <div class="about-text">
+        <div class="section-title debate">
+            <h4>Believe Digital</h4>
+            <hr>
+            <div class="clearfix"></div>
+            <p class="intro">
+                <a href="http://www.believe.fr/"  target="_blank" style="color=blue">Société française</a>
+                spécialisée dans la diffusion musicale sur des plateformes numériques.
+                <br>
+                Elle a conclu un
+                <a href="https://drive.google.com/open?id=0B4-sjPft_IJGOFJTcFRzNmROYlpmUkdmSUpRdmRNekxQTW04"  target="_blank" style="color=blue">partenariat</a>
+                avec la BNF.
+            </p>
+        </div>
+</div>
+</div>
+<div class="container imgcontainer nicomede" id="nicomede9">
+    <img src="img/cace.jpg" id="debateimg" alt="" />
+    <div class="about-text">
+        <div class="section-title debate">
+            <h4>Comission des Affaires Culturelles et de l'Education</h4>
+            <hr>
+            <div class="clearfix"></div>
+            <p class="intro">
+                Elle a auditionné le président de la BnF, M. Bruno Racine sur les accords de partenariats conclus.
+                Elle ne s’est pas prononcé sur ceux-ci en tant que tel mais nombre de ses membres ont
+                <a href="https://www.senat.fr/rap/r09-338/r09-3384.html"  target="_blank" style="color=blue">décrié</a>
+                à titre personnel les accords.
+            </p>
+        </div>
+</div>
+</div>
+<div class="container imgcontainer nicomede" id="nicomede10">
+    <img src="img/cada.jpg" id="debateimg" alt="" />
+    <div class="about-text">
+        <div class="section-title debate">
+            <h4>CADA</h4>
+            <h2>Comission d'accès aux documents administratifs</h2>
+            <hr>
+            <div class="clearfix"></div>
+            <p class="intro">
+                <a href="http://www.cada.fr/"  target="_blank" style="color=blue">Autorité administrative</a>
+                indépendante créée par la loi du 17 juillet 1978
+                et chargée de garantir la liberté d’accès aux documents à caractère administratif.
+                Elle s’est
+                <a href="http://www.bnf.fr/fr/acces_dedies/anx_bnf_partenariats/a.bnf_partenariats_contrats.html"  target="_blank" style="color=blue">prononcée</a>
+                pour la diffusion des accords de partenariats arguant que
+                BnF-partenariats était une personne privée « chargé d’une mission de service public ».
+            </p>
+        </div>
+</div>
+</div>
+<div class="container imgcontainer nicomede" id="nicomede11">
+    <img src="img/CNN.png" id="debateimg" alt="" />
+    <div class="about-text">
+        <div class="section-title debate">
+            <h4>CNN</h4>
+            <h2>Conseil National du Numérique</h2>
+            <hr>
+            <div class="clearfix"></div>
+            <p class="intro">
+                <a href="http://www.cnnumerique.fr/home-2/"  target="_blank" style="color=blue">Organisme consultatif</a>
+                français créé par décret le 29 avril 2011.
+                Il est chargé de traiter de toutes les questions posées par le développement numérique.
+                Il s ‘est prononcé pour l’appartenance au domaine public des copies numériques
+                d’œuvres du domaine public.
+            </p>
+        </div>
+</div>
+</div>
+
                 </div>
             </div>
         </div>
-            <p>
-                <strong>Graphe de présentation des différents acteurs</strong> <br><br>
-                (Très) Grosse image
-                Ne aps oublier la légende
-            </p>
             <div class="container text-center">
                 <div class="section-title center">
                     <h2><strong>Suite</strong> de la présentation de la controverse</h2>

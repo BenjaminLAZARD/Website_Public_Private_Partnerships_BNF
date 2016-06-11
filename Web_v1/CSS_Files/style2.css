@@ -40,6 +40,7 @@ p.intro{
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: justify;
+	margin-top: 0;
 }
 
 .debate p{
@@ -105,7 +106,7 @@ font-weight: 900;
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
-	font-size: 9px;
+	font-size: 12px;
 	letter-spacing: 1px;
 }
 .on {
@@ -233,7 +234,7 @@ a.fa.fa-arrow-circle-right:hover{
 }
 /* About Section */
 #tf-about{
-	padding: 80px 0;
+	padding: 3% 0;
 }
 ul.about-list{ margin: 30px 0 0 ;}
 ul.about-list li{
@@ -320,23 +321,45 @@ ul.about-list li span{
 
 .debate h2{
 	font-weight:50;
-	font-size: 150%;
+	font-size: 100%;
 	line-height: 100%;
 	word-wrap: break-word;
 }
 
 .debate h4{
 	font-weight:50;
-	font-size: 200%;
+	font-size: 150%;
 	line-height: 100%;
 	word-wrap: break-word;
+}
+
+.debate hr{
+	border-color: #fcac45;
+	border-width: 4px;
+	width: 40px;
+	float: left;
+	clear: both;
 }
 
 .mycontainer{
 	position: relative;
 }
 
+.nicomede{
+	vertical-align: baseline;
+	border-radius: 50px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #222222;
+	height: 585px;
+	transition: 1s;
+	box-shadow: 20px 20px 10px #888888;
+	display:none;
+}
+
 .nicomede1 {
+
+	height: 585px;
 	/*max-height: 70vh;//devrait fonctionner pour le contenu de la div aussi, ce qui n'est pas le cas*/
 	/*ne pas toucher : il en faut au moins 1 qui prenne de l'espace en hauteur sur la page*/
 }
@@ -353,6 +376,8 @@ ul.about-list li span{
 	top: 0;
 	left: 0;
 	display: none;
+	box-shadow: 20px 20px 10px #888888;
+	height: 585px;
 }
 
 .nicomede3{
@@ -433,7 +458,8 @@ img.img-circle.team-img {
 
 /* Services Section */
 #tf-services{
-	padding: 80px 0;
+	padding-top: 2.5%;
+	padding-bottom: 2%;
 }
 
 .space{
@@ -770,11 +796,12 @@ button.btn.tf-btn.btn-default {
 	margin-bottom: 0;
 }
 #debateimg{
-	border-radius:30%;
-	padding: 10px;
-	max-width: 100%;
+	border-radius:10%;
+	max-height: 150px;
+	max-width: 300px;
+	margin: 5%;
 }
-#imgcontainer{
+.imgcontainer{
 	border-radius:10%;
 	padding: 3%;
 	margin-bottom:5%;
@@ -792,6 +819,7 @@ button.btn.tf-btn.btn-default {
 	background-attachment: inherit;
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
+	box-shadow: 20px 20px 10px #888888;
 }
 
 #arbre_test{
@@ -824,7 +852,21 @@ button.btn.tf-btn.btn-default {
 	font-size: 30;
 	font-weight: 900;
 }
-
+.area{
+	display: block;
+	background-color: #222222;
+}
+.overlay_acteurs{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	background-attachment: fixed;
+	padding: 80px 0;
+}
 #image_acteurs{
 	margin-right: 5%;
 	border-radius: 50px;
@@ -833,43 +875,6 @@ button.btn.tf-btn.btn-default {
 	border-color: #222222;
 	display: block;
 }
-#comission_eur:hover ~ .nicomede2{
-	display: none;
-}
-#ministere:hover ~ #image_acteurs{
-	display: none;
-}
-#savoircom1:hover ~ #image_acteurs{
-	display: none;
-}
-#interassociation:hover ~ #image_acteurs{
-	display: none;
-}
-#bnf_acteur:hover ~ #image_acteurs{
-	display: none;
-}
-#bnfpartenariat_acteur:hover ~ #image_acteurs{
-	display: none;
-}
-#proquest_acteur:hover ~ #image_acteurs{
-	display: none;
-}
-#apple_acteur:hover ~ #image_acteurs{
-	display: none;
-}
-#believe_acteur:hover ~ #image_acteurs{
-	display: none;
-}
-#comission_educ:hover ~ #image_acteurs{
-	display: none;
-}
-#cada:hover ~ #image_acteurs{
-	display: none;
-}
-#consnatnum:hover ~ #image_acteurs{
-	display: none;
-}
-
 
 /* Footer */
 nav#footer{
