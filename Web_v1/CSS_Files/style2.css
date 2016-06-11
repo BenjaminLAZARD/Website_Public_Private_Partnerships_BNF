@@ -339,9 +339,23 @@ ul.about-list li span{
 #logoBNF{
 	width: 600px;
 	margin: auto;
+	padding-left: 100px;
 	display: inline-table;
 	align-items: center;
 	float: none;
+}
+#logoTelec{
+	width: 40%;
+	margin: auto;
+	display: inline-table;
+	margin-left: 50%;
+	align-items: center;
+	float: left;
+}
+
+#logoTelec:hover{
+	border: 8px solid #FCAC45;
+	/*transition: 1s;*/
 }
 #Gallicaimg{
 	width: 450px;
@@ -715,7 +729,7 @@ ol.type li a.active { font-weight: 700; }
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
-#tf-testimonials3{
+.tf-testimonials3{
 	background: url(../glossaire.jpg);
 	background-size: cover;
 	background-position: center;
@@ -723,7 +737,7 @@ ol.type li a.active { font-weight: 700; }
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
-#tf-testimonials3 .overlay{
+.tf-testimonials3 .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -1016,6 +1030,14 @@ p.intro2{
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin-top: 0;
+}
+p.intro3{
+	font-size: 20px;
+	line-height: 35px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	margin-top: 0;
+	width: 80%;
 }
 .ressources{
 	vertical-align: baseline;
