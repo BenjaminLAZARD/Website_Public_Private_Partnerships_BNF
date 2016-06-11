@@ -45,9 +45,11 @@ p.intro{
 
 .debate p{
 	padding: 2.5%;
-	font-size: 12;
+	font-size: 16;
 	font-weight: 500;
 	line-height: 150%;
+	max-height: 280px;
+	overflow-y: auto;
 }
 
 .debate div{
